@@ -1,0 +1,190 @@
+/* 浮动编辑窗口样式 */
+
+/* 主容器样式 */
+.floating-editor-container {
+    position: fixed;
+    z-index: 9999;
+    background-color: var(--background-primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--background-modifier-border);
+}
+
+/* 标题栏样式 */
+.floating-editor-title-bar {
+    padding: 8px 12px;
+    background-color: var(--background-secondary-alt);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: move;
+    user-select: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.floating-editor-title {
+    margin: 0;
+    font-size: 16px;
+    color: var(--text-normal);
+}
+
+/* 文本区域样式 */
+.floating-editor-textarea {
+    width: calc(100% - 20px);
+    min-height: 200px;
+    margin: 10px;
+    padding: 10px;
+    font-family: var(--font-monospace);
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    resize: vertical;
+    background-color: var(--background-secondary);
+    color: var(--text-normal);
+}
+
+/* 文件名输入区域 */
+.floating-editor-filename-container {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+    padding: 8px;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+}
+
+.floating-editor-filename-label {
+    font-size: 14px;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+
+.floating-editor-filename-input {
+    flex: 1;
+    height: 28px;
+    padding: 0 8px;
+    border: 1px solid var(--background-modifier-border);
+    border-radius: 4px;
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    font-size: 14px;
+}
+
+.floating-editor-filename-ext {
+    margin-left: 4px;
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+/* 按钮容器样式 */
+.floating-editor-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px 10px 10px;
+}
+
+/* 按钮样式 */
+.floating-editor-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--interactive-normal);
+    color: var(--text-normal);
+    transition: background-color 0.2s ease;
+    font-size: 14px;
+}
+
+.floating-editor-button:hover {
+    background-color: var(--interactive-hover);
+}
+
+.floating-editor-save {
+    background-color: var(--interactive-accent);
+    color: var(--text-on-accent);
+}
+
+.floating-editor-save:hover {
+    background-color: var(--interactive-accent-hover);
+}
+
+.floating-editor-discard {
+    background-color: var(--background-modifier-error);
+    color: var(--text-on-accent);
+}
+
+.floating-editor-discard:hover {
+    opacity: 0.9;
+}
+
+/* 插件样式 */
+.ai-processing-modal {
+  padding: 15px;
+}
+
+.ai-processing-textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+  font-family: var(--font-monospace);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--background-modifier-border);
+  padding: 8px;
+}
+
+.ai-processing-input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--background-modifier-border);
+}
+
+.ai-processing-button {
+  background-color: var(--interactive-accent);
+  color: var(--text-on-accent);
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.ai-processing-button:hover {
+  background-color: var(--interactive-accent-hover);
+}
+
+.ai-processing-button.secondary {
+  background-color: var(--background-modifier-border);
+  color: var(--text-normal);
+}
+
+.ai-processing-button.secondary:hover {
+  background-color: var(--background-modifier-border-hover);
+}
+
+.ai-processing-floating-window {
+  position: absolute;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--background-primary);
+  resize: both;
+  overflow: auto;
+}
+
+.ai-processing-window-header {
+  padding: 8px 12px;
+  cursor: move;
+  background-color: var(--background-secondary);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

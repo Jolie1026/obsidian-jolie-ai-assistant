@@ -1,0 +1,22 @@
+{
+  "windowPosition": {
+    "x": 85,
+    "y": 51
+  },
+  "models": [
+    {
+      "apiKey": "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",
+      "modelName": "deepseek/deepseek-r1:free",
+      "name": "gpt-4o",
+      "endpoint": "https://openrouter.ai/api/v1/chat/completions"
+    },
+    {
+      "name": "gemma3",
+      "isOllama": true,
+      "apiKey": "",
+      "endpoint": "http://localhost:11434/api/generate",
+      "modelName": "gemma3:27b"
+    }
+  ],
+  "lastModelName": "gemma3"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "obsidian-jolie-ai-assistant",
+  "name": "Jolie AI Assistant",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "Process selected text using AI models through a floating window interface.",
+  "author": "cnbpm",
+  "authorUrl": "https://github.com/cnbpm",
+  "isDesktopOnly": true,
+  "fundingUrl": "",
+  "communityPluginStatus": "未被社区采纳",
+  "main": "main.js"
+}
